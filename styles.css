@@ -1,0 +1,152 @@
+:root{
+    --color-texto:#F3F4F3;
+    --color-fondo:#160841;
+    --color-titulos: #B4171F;
+    --color-fondo-oscuro:#3C0E4A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--color-texto);
+    box-sizing: border-box;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    height: 10rem;
+    width: 200rem;
+    color: var(--color-titulos);
+    background-color: var(--color-fondo-oscuro); 
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo{
+    
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.avengers{
+    height: 520%;
+    width: 520%;
+    margin: 0  10rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    
+    width: 100rem;
+    height: 4rem;
+    margin:2rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+    
+
+p{
+    font-size: 1.5rem;
+    font-family: 'Zen Dots';
+
+}
+h3{
+    font-family: 'Zen Dots';
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clean{
+    font-size: 2rem;
+    width: 5%;
+    height: 4rem;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+imput::placeholder{
+    top:65%;
+    
+}
+
+.app-header-search{
+    position: relative;
+    color: var(--color-titulo);
+    background-color: var(--color-fondo);
+    font-size: 1.5rem;    
+    height: 80%;
+    width: 95%;
+    display: flex; 
+    flex-direction: column; /*Darle dirección a los elementos*/
+    justify-content: left;
+    align-items: left; /*Alinear los elementos*/
+    margin: 4rem;
+    padding: 4rem;
+}
+.popular{
+    text-align: left;
+    font-size: 1.5rem;
+    display: flex; 
+    flex-direction: column; /*Darle dirección a los elementos*/
+    justify-content: left;
+    align-items: left;
+    height: 80%;
+    width: 95%;
+}
+
+.heroes{
+    display: grid;
+    grid-template-columns: repeat(3,9rem 4fr);
+    grid-template-rows: repeat(auto-fill, 12rem 2fr);
+    gap: 2em;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.heroes grid{
+    border: 3rem dotted var(--color-fondo-oscuro);
+}
+.footer{
+    display: flex;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 4rem;
+	justify-content: center;
+	align-items: center;
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-letra-texto);
+    font-size: 1.5rem;
+	font-weight: 400;
+	margin-top: 7rem;
+    
+}
