@@ -1,0 +1,75 @@
+:root{
+    --color-texto:#F3F4F3;
+    --color-fondo:#160841;
+    --color-titulos: #B4171F;
+    --color-fondo-oscuro:#3C0E4A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--color-letra-texto);
+    box-sizing: border-box;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-wrapper{
+    height: 20rem;
+    width: 200rem;
+    color: var(--color-letra-titulos);
+    background-color: var(--color-fondo-oscuro); 
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-header-title{
+    font-size: 15rem;
+    font-family: 'Zen Dot';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input{
+    
+    width: 100rem;
+    height: 4rem;
+    margin:20rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+    
+
+p{
+    font-size: 1.5rem;
+    font-family: 'Zen Dot';
+
+}
+h3{
+    font-family: 'Zen Dot';
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+imput::placeholder{
+    top:65%;
+    
+}
