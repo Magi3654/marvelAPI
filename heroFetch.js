@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict'
 
 export const heroSearch= async (heroName)=>{
@@ -5,4 +6,12 @@ export const heroSearch= async (heroName)=>{
     +heroName);
     const data=await response.json();
     return data;
+=======
+'use strict'
+
+export const heroSearch= async (heroName)=>{
+    const response=await fetch(''+heroName);
+    const data=await response.json();
+    return data;
+>>>>>>> 7e5f2b8e3821b81c8b51aceb4521ee104b5f53b4
 }
