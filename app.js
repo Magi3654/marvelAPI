@@ -50,7 +50,7 @@ async function cleanData(){
 
 }
 
-const heroesCatalog=document.getElementById('app-header-search');
+const heroesCatalog=document.getElementById('heroesCatalog');
 
 const buscar=document.createElement('input');
 buscar.id="search";

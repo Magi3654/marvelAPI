@@ -1,9 +1,9 @@
 
 :root{
     --color-texto:#F3F4F3;
-    --color-fondo:#160841;
-    --color-titulos: #B4171F;
-    --color-fondo-oscuro:#3C0E4A;
+    --color-fondo:#031D44;
+    --color-titulos: #BCB8B1;
+    --color-fondo-oscuro:#254441;
 }
 
 *{
@@ -97,9 +97,9 @@ imput::placeholder{
     
 }
 
-.app-header-search{
+.heroesCatalog{
     position: relative;
-    color: var(--color-titulo);
+    color: var(--color-titulos);
     background-color: var(--color-fondo);
     font-size: 1.5rem;    
     height: 80%;
@@ -145,7 +145,7 @@ imput::placeholder{
 	justify-content: center;
 	align-items: center;
     background-color: var(--color-fondo-oscuro);
-    color: var(--color-letra-texto);
+    color: var(--color-texto);
     font-size: 1.5rem;
 	font-weight: 400;
 	margin-top: 7rem;
