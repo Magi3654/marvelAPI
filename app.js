@@ -1,14 +1,13 @@
-
 'use strict'
 
-import {searchHero} from "./heroFetch.js";
+import {heroSearch} from "./heroFetch.js";
 
 
 async function showHero(){
     const heroes=document.getElementById('heroes');
     const search=document.getElementById('search').value;
     const heroesCatalog= await assembleHeroes(search);
-    heroesCatalog.data.recipes.map(hero=>{
+    heroesCatalog.data.results.map(hero=>{
         console.log(hero.name);
 
         const heroName=document.createElement('p');
@@ -17,7 +16,7 @@ async function showHero(){
         heroName.textContent=hero.name;
 
         const imgHero=document.createElement ('img');
-        imgHero.src=hero.data.results.thumbnail;
+        imgHero.src=`${hero.thumbnail.path}.${hero.thumbnail.extension}`;
         imgHero.alt=hero.name;
         imgHero.style="width:10rem; height:10rem; objectFit=cover; objectPosittion:center";
         
@@ -40,7 +39,7 @@ async function showHero(){
 }
 
 async function assembleHeroes(data){
-    return await searchHero(data.toLowerCase());
+    return await heroSearch(data.toLowerCase());
 }
 
 async function cleanData(){
@@ -55,7 +54,7 @@ const heroesCatalog=document.getElementById('heroesCatalog');
 const buscar=document.createElement('input');
 buscar.id="search";
 buscar.style="width:100rem;";
-buscar.placeholder="IronMan...";
+buscar.placeholder="Ej. Iron Man";
 
 const button=document.createElement('button');
 button.textContent="Assemble";
