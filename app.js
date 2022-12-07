@@ -18,7 +18,7 @@ async function showHero(){
         const imgHero=document.createElement ('img');
         imgHero.src=`${hero.thumbnail.path}.${hero.thumbnail.extension}`;
         imgHero.alt=hero.name;
-        imgHero.style="width:10rem; height:10rem; objectFit=cover; objectPosittion:center; padding: 1rem;";
+        imgHero.style="width:10rem; height:10rem; objectFit=cover; objectPosittion:center;";
         
         const id=document.createElement('p');
         id.style.fontSize="2rem";
@@ -34,6 +34,7 @@ async function showHero(){
 
         heroes.style.border="0.7rem solid #f3f4f3";
         heroes.style.borderRadius="1.5rem"
+        heroes.style="padding:1.5rem;"
 
     }) 
 }
