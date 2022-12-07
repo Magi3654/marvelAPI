@@ -160,10 +160,9 @@ imput::placeholder{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-}
-.heroes grid{
     border: 1.5rem dotted var(--color-fondo-oscuro);
 }
+
 .footer{
     display: flex;
 	position: fixed;
