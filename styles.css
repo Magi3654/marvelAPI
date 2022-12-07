@@ -152,8 +152,8 @@ imput::placeholder{
 
 .heroes{
     display: grid;
-    grid-template-columns: repeat(3,9rem 4fr);
-    grid-template-rows: repeat(auto-fill, 12rem 2fr);
+    grid-template-columns: 1;
+    grid-template-rows: 1;
     gap: 2em;
     margin: 2rem;
     display: flex;
