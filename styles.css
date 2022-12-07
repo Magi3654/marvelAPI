@@ -1,9 +1,9 @@
 
 :root{
-    --color-texto:#F3F4F3;
-    --color-fondo:#031D44;
-    --color-titulos: #BCB8B1;
-    --color-fondo-oscuro:#254441;
+    --color-texto:#EAE2B7;
+    --color-fondo:#003049;
+    --color-titulos: #EAE2B7;
+    --color-fondo-oscuro:#D00000;
 }
 
 *{
@@ -17,7 +17,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-color: var(--color-texto);
+    background: var(--color-texto);
     box-sizing: border-box;
     font-size: 62.5%;
     display: flex;
@@ -26,34 +26,39 @@ body{
 }
 .header{
     height: 10rem;
-    width: 200rem;
+    width: 100%;
     color: var(--color-titulos);
     background-color: var(--color-fondo-oscuro); 
     font-size: 2.5rem;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    
 }
+
 .header__logo{
     
-    height: 1.5rem;
-    width: 1.5rem;
+    height: auto;
+    margin: 1rem 5.5rem;
+    width: 5rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    
 }
 .avengers{
-    height: 520%;
-    width: 520%;
-    margin: 0  10rem 1rem 1rem;
+    height: 7.5rem;
+    width: 15rem;
+    margin: .1rem ;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 input{
     
-    width: 100rem;
+    width: auto;
     height: 4rem;
     margin:2rem;
     border-radius: 2rem;
@@ -61,14 +66,15 @@ input{
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
 }
     
 
 p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: 'Zen Dots';
+    width: auto;
 
 }
 h3{
@@ -89,6 +95,7 @@ h3{
     border-radius: 1.5rem;
     background-color: var(--color-texto);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -99,11 +106,11 @@ imput::placeholder{
 
 .heroesCatalog{
     position: relative;
-    color: var(--color-titulos);
+    color: var(--color-texto);
     background-color: var(--color-fondo);
     font-size: 1.5rem;    
     height: 80%;
-    width: 95%;
+    width: 100%;
     display: flex; 
     flex-direction: column; /*Darle dirección a los elementos*/
     justify-content: left;
@@ -113,11 +120,11 @@ imput::placeholder{
 }
 .popular{
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     display: flex; 
-    flex-direction: column; /*Darle dirección a los elementos*/
-    justify-content: left;
-    align-items: left;
+    flex-direction: row; /*Darle dirección a los elementos*/
+    justify-content: center;
+    align-items: center;
     height: 80%;
     width: 95%;
 }

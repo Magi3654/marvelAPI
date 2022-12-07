@@ -53,19 +53,19 @@ const heroesCatalog=document.getElementById('heroesCatalog');
 
 const buscar=document.createElement('input');
 buscar.id="search";
-buscar.style="width:100rem;";
-buscar.placeholder="Ej. Iron Man";
+buscar.style="width:auto;";
+buscar.placeholder=" Ej. Iron Man";
 
 const button=document.createElement('button');
 button.textContent="Assemble";
 button.onclick=showHero;
-button.style="font-size:1.2rem;width:10%; height:2rem;margin:2rem;border-radius:1.2rem;background-color:#f3f4f3;font-weight:bolder;padding:1.2rem 2rem;";
+button.style="font-size:1.4rem; width:40%; height:2.5rem; margin:1rem; border-radius:1.2rem; border: none; background-color:#f3f4f3;font-weight:bolder;padding:1.2rem 2rem; ";
 
 const clean=document.createElement('button');
 clean.textContent="Swipe";
 clean.id="Swipe";
 clean.onclick=cleanData;
-clean.style="font-size:1.2rem;width:10%; height:2rem;margin:2rem;border-radius:1.2rem;background-color:#f3f4f3;font-weight:bolder;padding:1.2rem 2rem;";
+clean.style="font-size:1.4rem; width:40%; height:2.5rem; margin:1rem; border-radius:1.2rem; border: none; background-color:#f3f4f3;font-weight:bolder;padding:1.2rem 2rem;";
 
 
 heroesCatalog.append(buscar);
