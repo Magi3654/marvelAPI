@@ -85,19 +85,29 @@ h3{
     align-items: center;
 }
 
-
-.clean{
+.assemble{
     font-size: 2rem;
-    width: 5%;
+    width: 15rem;
     height: 4rem;
     margin: 2rem 0;
+    border: none;
+    padding: .6rem 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-texto);
+    display: flex;
+    flex-wrap: wrap;
+}
+.swipe{
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+    margin: 2rem 0;
+    padding: .6rem 3.5rem;
     border: none;
     border-radius: 1.5rem;
     background-color: var(--color-texto);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 imput::placeholder{
     top:65%;
@@ -113,8 +123,8 @@ imput::placeholder{
     width: 100%;
     display: flex; 
     flex-direction: column; /*Darle dirección a los elementos*/
-    justify-content: left;
-    align-items: left; /*Alinear los elementos*/
+    justify-content: center;
+    align-items: center; /*Alinear los elementos*/
     margin: 4rem;
     padding: 4rem;
 }
