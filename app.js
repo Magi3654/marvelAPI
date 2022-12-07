@@ -18,7 +18,7 @@ async function showHero(){
         const imgHero=document.createElement ('img');
         imgHero.src=`${hero.thumbnail.path}.${hero.thumbnail.extension}`;
         imgHero.alt=hero.name;
-        imgHero.style="width:10rem; height:10rem; objectFit=cover; objectPosittion:center";
+        imgHero.style="width:10rem; height:10rem; objectFit=cover; objectPosittion:center; padding: 1rem;";
         
         const id=document.createElement('p');
         id.style.fontSize="2rem";
