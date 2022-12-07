@@ -40,11 +40,11 @@ body{
 .header__title{
     height: auto;
     margin: 1rem 1rem;
-    width: 1rem;
+    width: 60%;
     font-size: 2rem;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    display: flex;
+    position: relative;
 }
 
 .header__logo{
@@ -54,7 +54,7 @@ body{
     width: 5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     
 }
 .avengers{
@@ -85,6 +85,7 @@ p{
     font-size: 1.6rem;
     font-family: 'Zen Dots';
     width: auto;
+    height: auto;
 
 }
 h3{
@@ -129,7 +130,7 @@ imput::placeholder{
     color: var(--color-texto);
     background-color: var(--color-fondo);
     font-size: 1.5rem;    
-    height: 80%;
+    height: 100%;
     width: 100%;
     display: flex; 
     flex-direction: column; /*Darle dirección a los elementos*/
