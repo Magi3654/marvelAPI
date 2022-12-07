@@ -160,7 +160,7 @@ imput::placeholder{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    border: 1.5rem dotted var(--color-fondo-oscuro);
+  
 }
 
 .footer{
