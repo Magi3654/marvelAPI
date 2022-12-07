@@ -32,7 +32,7 @@ async function showHero(){
         heroes.append(imgHero);
         heroes.append(infoSection);
 
-        heroes.style.border="1rem solid #f3f4f3";
+        heroes.style.border="0.5rem solid #f3f4f3";
         heroes.style.borderRadius="1.5rem"
 
     }) 
