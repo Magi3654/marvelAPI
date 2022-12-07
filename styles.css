@@ -37,14 +37,24 @@ body{
     
 }
 
+.header__title{
+    height: auto;
+    margin: 1rem 1rem;
+    width: 1rem;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
 .header__logo{
     
     height: auto;
-    margin: 1rem 5.5rem;
+    margin: 1rem 20rem;
     width: 5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     
 }
 .avengers{
