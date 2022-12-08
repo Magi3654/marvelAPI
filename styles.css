@@ -6,6 +6,37 @@
     --color-fondo-oscuro:#D00000;
 }
 
+@keyframes disappear{
+	0% {
+	  opacity: 1;
+	}
+
+	50% {
+	  opacity: 0;
+	  transform: rotateY(90deg);
+	}
+
+	100% {
+	  display: none;
+	  opacity: 0;
+	}
+}
+
+@keyframes appear{
+	100% {
+	  opacity: 1;
+	}
+
+	50% {
+	  opacity: 0.5;
+	  transform: rotateY(90deg);
+	}
+
+	0% {
+	  opacity: 0;
+	}
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -67,7 +98,6 @@ body{
 }
 
 input{
-    
     width: auto;
     height: 4rem;
     margin:2rem;
@@ -151,6 +181,7 @@ imput::placeholder{
 }
 
 .heroes{
+	width: 100%;
     display: grid;
     grid-template-columns: 5rem 5rem 5rem;
     grid-template-rows: 2rem 2rem 2rem;
@@ -158,9 +189,82 @@ imput::placeholder{
     margin: 2rem;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
-  
+    flex-direction: column;
+    align-items: center; 
+}
+
+.container {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr;
+	backface-visibility: hidden;
+    border-radius: 10px;
+	overflow: hidden;
+    transition: .5s;
+	box-shadow: 0 5px 10px #000;
+}
+
+.heroImg {
+	border-radius: 1.2rem;
+}
+
+.infoSection {
+	padding: 0 2rem;
+}
+
+.frontSection {
+	background-color: #D62828;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #000;
+	padding: 1rem 0;
+	min-height: 14rem;
+	max-height: fit-content;
+	min-width: fit-content;
+	text-align: center;
+
+	grid-row-start: 1;
+	grid-column-start: 1;
+}
+
+.heroTitle {
+	text-align: center;
+}
+
+.description {
+	padding: 1rem;
+}
+
+.backSection {
+	background-color:  #F77F00;
+	padding: 1rem;
+	min-height: 14rem;
+	max-height: fit-content;
+	transform: perspective(600px) rotateY(180deg);
+	grid-row-start: 1;
+	grid-column-start: 1;
+	display: none;
+}
+
+.container:hover .frontSection {
+    transform: perspective(600px) rotateY(180deg);
+	animation-name: disappear;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.container:hover .backSection {
+    transform: perspective(600px) rotateY(360deg);
+	display:inline;
+	animation-name: appear;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+	
+
 }
 
 .footer{

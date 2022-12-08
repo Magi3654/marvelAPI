@@ -8,30 +8,73 @@ async function showHero(){
     const search=document.getElementById('search').value;
     const heroesCatalog= await assembleHeroes(search);
     heroesCatalog.data.results.map(hero=>{
-        console.log(hero.name);
+        console.log(hero);
 
+		//Front name
         const heroName=document.createElement('p');
         heroName.style.fontWeight="bold";
         heroName.style.fontSize="2rem";
         heroName.textContent=hero.name;
 
+		//Front image
         const imgHero=document.createElement ('img');
         imgHero.src=`${hero.thumbnail.path}.${hero.thumbnail.extension}`;
         imgHero.alt=hero.name;
         imgHero.style="width:10rem; height:10rem; objectFit=cover; objectPosittion:center;";
-        
+		imgHero.className = "heroImg"
+
+        //Front id
         const id=document.createElement('p');
         id.style.fontSize="2rem";
-        id.textContent="Id"+hero.id;
-        
+        id.textContent="Id: "+hero.id;
 
+		const comics=document.createElement('p');
+		comics.textContent=`Comics: ${hero.comics.available}`
+
+		const series=document.createElement('p');
+		series.textContent=`most significant comic:  ${hero.comics.items[0].name}`
+
+        //Front info container
         const infoSection=document.createElement("div");
+		infoSection.className="infoSection"
         infoSection.appendChild(heroName);
         infoSection.appendChild(id);
+		infoSection.append(comics)
+		infoSection.append(series)
+		
 
-        heroes.append(imgHero);
-        heroes.append(infoSection);
+		//Front section
+		const frontSection = document.createElement("div");
+		frontSection.id = "frontSection"
+		frontSection.className = "frontSection"
+        frontSection.append(imgHero);
+        frontSection.append(infoSection);
 
+		//Back title
+		const title = document.createElement("h2");
+		title.textContent = hero.name;
+		title.className = "heroTitle"
+
+		// Back description
+		const description = document.createElement("p");
+		description.textContent = hero.description;
+		description.className = "description"
+
+		//Back section 
+		const backSection = document.createElement("div");
+		backSection.id = "backSection"
+		backSection.className = "backSection"
+
+		backSection.append(title)
+		backSection.append(description)
+
+		const cardContainer = document.createElement("div");
+		cardContainer.id = "container"
+		cardContainer.className = "container"
+		cardContainer.append(frontSection)
+		cardContainer.append(backSection)
+
+		heroes.append(cardContainer)
         heroes.style.border="0.7rem solid #f3f4f3";
         heroes.style.borderRadius="1.5rem"
         heroes.style="padding:1.5rem;"
@@ -71,4 +114,5 @@ clean.className="swipe";
 heroesCatalog.append(buscar);
 heroesCatalog.append(button);
 heroesCatalog.append(clean);
+
 
